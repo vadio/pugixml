@@ -10047,7 +10047,7 @@ PUGI__NS_BEGIN
 				// fallthrough to type conversion
 			}
 
-			default:
+			[[clang::fallthrough]]; default:
 			{
 				switch (_rettype)
 				{
@@ -10183,7 +10183,7 @@ PUGI__NS_BEGIN
 				// fallthrough to type conversion
 			}
 
-			default:
+			[[clang::fallthrough]]; default:
 			{
 				switch (_rettype)
 				{
@@ -10467,7 +10467,7 @@ PUGI__NS_BEGIN
 				// fallthrough to type conversion
 			}
 
-			default:
+			[[clang::fallthrough]]; default:
 			{
 				switch (_rettype)
 				{
@@ -10617,7 +10617,7 @@ PUGI__NS_BEGIN
 				// fallthrough to type conversion
 			}
 
-			default:
+			[[clang::fallthrough]]; default:
 				assert(!"Wrong expression for return type node set");
 				return xpath_node_set_raw();
 			}
